@@ -6,9 +6,9 @@ void lomuto_sort(int *array, size_t size, int left, int right);
 void quick_sort(int *array, size_t size);
 
 /**
- * swap_ints - Swap two integers in an array.
- * @a: The first integer to swap.
- * @b: The second integer to swap.
+ * swap_ints - Func swap two integers in array.
+ * @a: First integer to swap.
+ * @b: Second integer to swap.
  */
 void swap_ints(int *a, int *b)
 {
@@ -20,14 +20,14 @@ void swap_ints(int *a, int *b)
 }
 
 /**
- * lomuto_partition - Order a subset of an array of integers according to
- *                    the lomuto partition scheme (last element as pivot).
- * @array: The array of integers.
- * @size: The size of the array.
- * @left: The starting index of the subset to order.
- * @right: The ending index of the subset to order.
+ * lomuto_partition - Array of integers according to
+ *                    the lomuto partition scheme.
+ * @array: Thrray of integers.
+ * @size: Size of the array.
+ * @left: Starting index of the subset to order.
+ * @right: Ending index of the subset to order.
  *
- * Return: The final partition index.
+ * Return: Final partition index.
  */
 int lomuto_partition(int *array, size_t size, int left, int right)
 {
@@ -57,11 +57,11 @@ int lomuto_partition(int *array, size_t size, int left, int right)
 }
 
 /**
- * lomuto_sort - Implement the quicksort algorithm through recursion.
- * @array: An array of integers to sort.
- * @size: The size of the array.
- * @left: The starting index of the array partition to order.
- * @right: The ending index of the array partition to order.
+ * lomuto_sort - Quicksort algorithm through recursion.
+ * @array: Array of integers to sort.
+ * @size: size of the array.
+ * @left: Starting index of the array partition to order.
+ * @right: Ending index of the array partition to order.
  *
  * Description: Uses the Lomuto partition scheme.
  */
@@ -78,10 +78,10 @@ void lomuto_sort(int *array, size_t size, int left, int right)
 }
 
 /**
- * quick_sort - Sort an array of integers in ascending
+ * quick_sort - Array of integers in ascending
  *              order using the quicksort algorithm.
- * @array: An array of integers.
- * @size: The size of the array.
+ * @array: Array of integers.
+ * @size: Size of the array.
  *
  * Description: Uses the Lomuto partition scheme. Prints
  *              the array after each swap of two elements.
